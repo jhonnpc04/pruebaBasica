@@ -1,0 +1,30 @@
+<html>
+<head>
+<tlitle>Sorteo Exposicion</title>
+<script name="javascript" type="text/javascript">
+    function mostrar(){
+	var	rangoinicial = 1;
+	var rangofinal = 6;
+	var rango = rangofinal - rangoinicial;
+	var aleatorio = Math.random() * rango;
+	aleatorio = Math.round(aleatorio) + 1;
+	if (aleatorio>=1 && aleatorio<=6) {;
+	document.getElementById("visualizar").innerHTML="<br> el tema de exposicion es: "+ aleatorio;
+	} 
+	else
+	{
+    document.getElementById("visualizar").innerHTML="<br> salio ";
+	}
+}
+</script>
+</head>
+<body>
+<div id="visualizar">
+		
+	<input  type="button" value="Mostrar" onclick="mostrar()">
+
+
+</div>
+</body>
+</html>
+	
